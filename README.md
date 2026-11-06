@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Java Programming Question Bank & Exam Guide
 
-# Run and deploy your AI Studio app
+A Java Programming question bank and exam guide for B.Tech R19.
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/fa159868-7d17-4429-a43b-7aa0a48b0c2b
+**Prerequisite:** Node.js
 
-## Run Locally
+```bash
+npm install
+npm run dev
+```
 
-**Prerequisites:**  Node.js
+Create a `.env.local` file from `.env.example` only if you use functionality that
+requires the Gemini API key. Never commit a real API key.
 
+## Deploy to GitHub Pages
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The GitHub Actions workflow builds and deploys this site to GitHub Pages whenever
+changes are pushed to `main`. In the repository settings, open **Pages** and set
+the build and deployment source to **GitHub Actions**.
+
+Once the workflow completes, the site is available at:
+https://dolambikaachyutha.github.io/crazy-/
